@@ -1,0 +1,497 @@
+@font-face {
+	font-family: 'Nasalization Rg';
+	src: url('/Nasalized.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CGF Locust Resistance';
+    src: url('/CGFLocustResistance.ttf') format('truetype');
+}
+.background {
+	-fx-background-color: #000000;
+	-fx-background-image: url('background_4.jpg');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+	-fx-alignment: center;
+}
+.mainmenubutton {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 10pt;
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 3 3 3;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 8 0 16;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 16 2 16;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 8,70%,6,5 );
+}
+.mainmenubutton:hover {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 10pt;
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 3 3 3;
+	-fx-border-color: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 8 0 16;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 16 2 16;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.75) , 10,70%,0,0 );
+}
+.title {
+	-fx-font-family: 'CGF Locust Resistance';
+	-fx-font-size: 20pt; 
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 0 0 0 0;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 8 0 16;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 16 2 16;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 8,70%,6,5 );
+}
+.subtitlearea1 {
+	-fx-background-color: linear-gradient(rgba(0,0,0,0.0) 0%, rgba(128,0,0,0.0) 5%, rgba(128,0,0,0.5) 30%, rgba(128,0,0,0.5) 70%, rgba(128,0,0,0.0) 95%, rgba(0,0,0,0.0) 100%);
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#440000 0%, #440000 20%, #AA8888 50%, rgba(128,0,0,0.5) 80%, rgba(0,0,0,0.0) 100%);
+	-fx-padding: 4 4 4 4;
+	-fx-background-insets: 0,1,2;
+	-fx-border-radius: 8 8 0 0;
+}
+.subtitletext1 {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 12pt; 
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+	-fx-alignment:center;
+}
+.subtitle2 {
+	-fx-background-color: rgba(255,0,0,0.15);
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#990000 0%, #FFFFFF 30%, #AA8888 40%, rgba(255,255,255,0.0) 60%, rgba(255,255,255,0.0) 100%);
+	-fx-padding: 2 2 2 2;
+	-fx-background-insets: 0,1,2;
+	-fx-border-radius: 0 0 0 0;
+}
+.subtitletext2 {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 10pt; 
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+	-fx-alignment:center;
+}
+.subsection {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 10pt;
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#990000 0%, #FFFFFF 30%, #AA8888 40%, rgba(255,255,255,0.0) 60%, rgba(255,255,255,0.0) 100%);
+	-fx-background-color: rgba(0,0,0,0.5);
+	-fx-background-insets: 0,1,2;
+	-fx-padding: 4 4 4 4;
+	-fx-margin: 2 16 2 16;
+	-fx-border-radius: 8 0 0 0;
+}
+.choicebox {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.choicebox:hover {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.75) , 10,70%,0,0 );
+}
+.button {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: rgba(0,0,0,0.2);
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.button:hover {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.75) , 10,70%,0,0 );
+}
+.checkbox {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: none;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.checkbox:hover {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: none;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+.hyperlink {
+	-fx-font-size: 8pt;
+	-fx-font-family: 'Nasalization Rg';
+	-fx-border-style: solid;
+	-fx-border-width: 0 0 1 0;
+	-fx-border-color: linear-gradient(from 0% 0% to 100% 0%, rgba(255,255,255,0.0) 0%, rgba(128,0,0,0.5) 20%, rgba(255,192,192,1) 50%, rgba(128,0,0,0.5) 80%, rgba(255,255,255,0.0) 100%);
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 40%, #AA8888 60%, #FFFFFF 80%, #FFFFFF 100%);
+	-fx-effect: dropshadow( gaussian , rgba(128,0,0,0.5) , 8,70%,0,0 );
+}
+.hyperlink:hover{
+	-fx-font-size: 8pt;
+	-fx-font-family: 'Nasalization Rg';
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 40%, #AA8888 60%, #FFFFFF 80%, #FFFFFF 100%);
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+	-fx-underline: true;
+}
+.textfield {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: rgba(255,255,255,0.25);
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.textfield:hover {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: rgba(255,255,255,0.25);
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 4 2 4;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+.tab-pane {
+	-fx-background-color: none;
+	-fx-border-style: none;
+}
+.tab-header-area {
+	-fx-background-color: none;
+	-fx-border-style: none;
+	-fx-padding: 0 3 0 3;
+}
+.tab-header-background {
+	-fx-background-color: none;
+	-fx-border-style: none;
+}
+.headers-region {
+	-fx-background-color: none;
+	-fx-border-style: none;
+}
+.tab {
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color: linear-gradient(from 0% 100% to 0% 0%, #AA0000 0%, #AA8888 70%, rgba(255,255,255,0.0) 95%);
+	-fx-border-radius: 3 3 3 3;
+	-fx-padding: 0 3 0 3;
+}
+.tab-label {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.uparrow {
+	-fx-shape: 'M16 0 L31 31 L0 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.uparrow:hover {
+	-fx-shape: 'M16 0 L31 31 L0 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+.downarrow {
+	-fx-shape: 'M0 0 L31 0 L16 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.downarrow:hover {
+	-fx-shape: 'M0 0 L31 0 L16 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+.rightarrow {
+	-fx-shape: 'M0 0 L16 16 L0 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.rightarrow:hover {
+	-fx-shape: 'M0 0 L16 16 L0 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+.leftarrow {
+	-fx-shape: 'M0 16 L31 0 L31 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+.leftarrow:hover {
+	-fx-shape: 'M0 16 L31 0 L31 31 Z';
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+.characterprofileimage{
+	-fx-background-color: none;
+	-fx-border-style: solid;
+	-fx-border-width: 2 2 2 2;
+	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-border-radius: 0 4 0 10;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.25) , 8,70%,6,5 );
+}
+.stdlabel {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: none;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 2 2 2 2;
+	-fx-background-insets: 0,1,2;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.25) , 8,70%,6,5 );
+}
+.table-view {
+	-fx-background-color: none;
+}
+.table-view > .column-header-background {
+    /* StackPane */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .filler {
+    /* Region - area of header not taken by column headers */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .column-drag-header {
+    /* StackPane */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .column-drag-header > .label {
+    /* Label */
+}
+
+.table-view > .column-header-background > .column-drag-header > .label > .text {
+    /* Text */
+}
+
+.table-view > .column-header-background > .nested-column-header {
+    /* Region */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .nested-column-header > .column-header.table-column {
+    /* Region */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .nested-column-header > .column-header.table-column > .label {
+	-fx-font-family: 'Nasalization Rg';
+	-fx-font-size: 8pt;
+	-fx-background-color: none;
+	-fx-border-style: none;
+	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+	-fx-padding: 0 0 0 0;
+}
+
+.table-view > .column-header-background > .nested-column-header > .column-header.table-column > .label > .text {
+    /* Text */
+}
+
+.table-view > .column-header-background > .nested-column-header > .column-header.table-column > Grid {
+    /* Grid */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .nested-column-header > .column-header.table-column > Grid > .arrow {
+    /* Region */
+}
+
+.table-view > .column-header-background > .nested-column-header > Rectangle {
+    /* Rectangle - separates column headers. Resize icon on :hover */
+	-fx-background-color: none;
+}
+
+.table-view > .column-header-background > .show-hide-columns-button {
+    /* StackPane */
+}
+
+.table-view > .column-header-background > .show-hide-columns-button > .show-hide-column-image {
+    /* StackPane */
+}
+
+.table-view > .column-overlay {
+    /* Region - highlights column being dragged */
+}
+
+.table-view > .column-resize-line {
+    /* Region - displays where the dragged column will drop  */
+}
+
+.table-view > .virtual-flow {
+    /* Region */
+}
+
+.table-view > .virtual-flow > .clipped-container {
+    /* Region */
+}
+
+.table-view > .virtual-flow > .clipped-container > .sheet {
+    /* Group */
+}
+
+.table-view > .virtual-flow > .clipped-container > .sheet > .cell.indexed-cell.table-row-cell {
+    /* TableRow */
+}
+.table-view > .virtual-flow > .clipped-container > .sheet > .cell.indexed-cell.table-row-cell > .cell.indexed-cell.table-cell.table-column {
+    /* TableCell */
+}
+
+.table-view > .virtual-flow > .clipped-container > .sheet > .cell.indexed-cell.table-row-cell > .cell.indexed-cell.table-cell.table-column > .text {
+    /* Text */
+}
+
+.table-view > .virtual-flow > .scroll-bar {
+    /* ScrollBar - has :vertical and :horizontal (default) pseudo-class state */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .track-background {
+    /* StackPane */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .track {
+    /* StackPane */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .thumb {
+    /* StackPane */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    /* Region */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .decrement-arrow {
+    /* Region */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button {
+    /* Region */
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-arrow {
+    /* Region */
+}
