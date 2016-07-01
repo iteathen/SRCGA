@@ -6,9 +6,10 @@
 package SRCGA;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.scene.Node;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 /**
  *
@@ -16,30 +17,35 @@ import javafx.stage.Stage;
  */
 public class FxmlScene {
     boolean failed = false;
-    Parent FXMLDoc = null;
-    Stage stage;
     
-    public FxmlScene(Stage stage, String resource) {
+    Stage stage;
+    StackPane BaseStackPane = new StackPane();
+    
+    public FxmlScene(Stage stage, String fxmlfile) { //if the fxml specifies fx:controller use this one
         this.stage = stage;
-        
             try{
-                FXMLDoc = FXMLLoader.load(getClass().getClassLoader().getResource(resource));
+                Node FxmlData = SRCGA_Main.FxmlHashMap.get(fxmlfile);
+                if (FxmlData == null) {
+                    FxmlData = FXMLLoader.load(Thread.currentThread().getContextClassLoader().getResource(fxmlfile));
+                    SRCGA_Main.FxmlHashMap.put(fxmlfile, FxmlData);
+                }
+                BaseStackPane.getChildren().setAll(FxmlData);
                 stage.getScene().addEventFilter(KeyEvent.KEY_PRESSED, event -> {
-                    if(event.getCode() == KeyCode.BACK_SPACE){
+                    if(event.getCode() == KeyCode.ESCAPE){
                         SRCGA_Main.MainMenuScreen.Show();
                     }
                 });
-
             }
             catch(Exception e){
                 e.printStackTrace();
                 failed = true;
             }
-        
     }
+    
     public boolean Show(){
-        if(!failed&&FXMLDoc!=null){
-            stage.getScene().setRoot(FXMLDoc);
+        if(!failed){
+            SRCGA_Main.preloader_StackPane.getChildren().clear();
+            SRCGA_Main.preloader_StackPane.getChildren().add(BaseStackPane);
             return true;
         }
         else return false;

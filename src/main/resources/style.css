@@ -1,11 +1,3 @@
-@font-face {
-	font-family: 'Nasalization Rg';
-	src: url('/Nasalized.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'CGF Locust Resistance';
-    src: url('/CGFLocustResistance.ttf') format('truetype');
-}
 .background {
 	-fx-background-color: #000000;
 	-fx-background-image: url('background_4.jpg');
@@ -16,7 +8,7 @@
 }
 .mainmenubutton {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 10pt;
+	-fx-font-size: 16pt;
 	-fx-background-color: none;
 	-fx-border-style: solid;
 	-fx-border-width: 2 3 3 3;
@@ -29,7 +21,7 @@
 }
 .mainmenubutton:hover {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 10pt;
+	-fx-font-size: 16pt;
 	-fx-background-color: none;
 	-fx-border-style: solid;
 	-fx-border-width: 2 3 3 3;
@@ -42,7 +34,7 @@
 }
 .title {
 	-fx-font-family: 'CGF Locust Resistance';
-	-fx-font-size: 20pt; 
+	-fx-font-size: 32pt; 
 	-fx-background-color: none;
 	-fx-border-style: solid;
 	-fx-border-width: 0 0 0 0;
@@ -64,7 +56,7 @@
 }
 .subtitletext1 {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 12pt; 
+	-fx-font-size: 14pt; 
 	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
 	-fx-background-insets: 0,1,2;
 	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
@@ -81,7 +73,7 @@
 }
 .subtitletext2 {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 10pt; 
+	-fx-font-size: 11pt; 
 	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
 	-fx-background-insets: 0,1,2;
 	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
@@ -128,7 +120,7 @@
 }
 .button {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 8pt;
+	-fx-font-size: 12pt;
 	-fx-background-color: rgba(0,0,0,0.2);
 	-fx-border-style: solid;
 	-fx-border-width: 1 1 1 1;
@@ -141,7 +133,7 @@
 }
 .button:hover {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 8pt;
+	-fx-font-size: 12pt;
 	-fx-background-color: none;
 	-fx-border-style: solid;
 	-fx-border-width: 1 1 1 1;
@@ -224,7 +216,7 @@
 	-fx-padding: 0 3 0 3;
 }
 .tab-header-background {
-	-fx-background-color: none;
+	-fx-background-color: rgba(0,0,0,0.5);
 	-fx-border-style: none;
 }
 .headers-region {
@@ -234,20 +226,22 @@
 .tab {
 	-fx-background-color: none;
 	-fx-border-style: solid;
-	-fx-border-width: 1 1 1 1;
+	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(from 0% 100% to 0% 0%, #AA0000 0%, #AA8888 70%, rgba(255,255,255,0.0) 95%);
 	-fx-border-radius: 3 3 3 3;
-	-fx-padding: 0 3 0 3;
+	-fx-padding: 2 6 2 6;
+        -fx-border-insets: 3px;
+        -fx-background-insets: 3px;
 }
 .tab-label {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 8pt;
+	-fx-font-size: 12pt;
 	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
 	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
 }
 .uparrow {
 	-fx-shape: 'M16 0 L31 31 L0 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -259,7 +253,7 @@
 }
 .uparrow:hover {
 	-fx-shape: 'M16 0 L31 31 L0 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -271,7 +265,7 @@
 }
 .downarrow {
 	-fx-shape: 'M0 0 L31 0 L16 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -283,7 +277,7 @@
 }
 .downarrow:hover {
 	-fx-shape: 'M0 0 L31 0 L16 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -295,7 +289,7 @@
 }
 .rightarrow {
 	-fx-shape: 'M0 0 L16 16 L0 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -307,7 +301,7 @@
 }
 .rightarrow:hover {
 	-fx-shape: 'M0 0 L16 16 L0 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -319,7 +313,7 @@
 }
 .leftarrow {
 	-fx-shape: 'M0 16 L31 0 L31 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -331,7 +325,7 @@
 }
 .leftarrow:hover {
 	-fx-shape: 'M0 16 L31 0 L31 31 Z';
-	-fx-background-color: none;
+	-fx-background-color: #990000;
 	-fx-border-style: solid;
 	-fx-border-width: 2 2 2 2;
 	-fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -354,7 +348,7 @@
 }
 .stdlabel {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 8pt;
+	-fx-font-size: 9pt;
 	-fx-background-color: none;
 	-fx-border-style: none;
 	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -400,7 +394,7 @@
 
 .table-view > .column-header-background > .nested-column-header > .column-header.table-column > .label {
 	-fx-font-family: 'Nasalization Rg';
-	-fx-font-size: 8pt;
+	-fx-font-size: 9pt;
 	-fx-background-color: none;
 	-fx-border-style: none;
 	-fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
@@ -494,4 +488,117 @@
 
 .table-view > .virtual-flow > .scroll-bar > .increment-arrow {
     /* Region */
+}
+
+.TreeView {
+    -fx-background-color: none;
+    -fx-font-family: 'Nasalization Rg';
+    -fx-font-size: 9pt;
+    -fx-text-fill: #FFFFFF;
+}
+
+.tree-cell {
+    -fx-background-color: none;
+    -fx-font-family: 'Nasalization Rg';
+    -fx-font-size: 9pt;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.PopUpWindow {
+    -fx-background-color: rgba(0,0,0,0.25);
+    -fx-border-style: solid;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-border-radius: 0 4 0 10;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-padding: 8 8 8 8;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+
+
+.scroll-pane > .viewport, .scroll-bar > .track , .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 9pt;
+}
+
+.scroll-bar > .thumb {
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-border-width: 0px;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 0px;
+    -fx-font-size: 12pt;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+}
+
+.scroll-bar > .increment-button {
+    -fx-shape: 'M0 0 L31 0 L16 31 Z';
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-border-radius: 0 4 0 10;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+
+.scroll-bar > .increment-button:hover {
+    -fx-shape: 'M0 0 L31 0 L16 31 Z';
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-border-radius: 0 4 0 10;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+
+.scroll-bar > .decrement-button {
+    -fx-shape: 'M16 0 L31 31 L0 31 Z';
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-border-radius: 0 4 0 10;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
+
+.scroll-bar > .decrement-button:hover {
+    -fx-shape: 'M16 0 L31 31 L0 31 Z';
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-border-radius: 0 4 0 10;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( gaussian , rgba(255,0,0,0.5) , 10,70%,0,0 );
+}
+
+.scroll-pane {
+    -fx-vbar-policy: as-needed;
+    -fx-hbar-policy: as-needed;
+}
+
+.wizard {
+    -fx-tab-max-height: 0 ;
+} 
+.wizard .tab-header-area {
+    visibility: hidden ;
 }

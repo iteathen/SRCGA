@@ -1,0 +1,272 @@
+.class Ljavafx/scene/control/Separator$StyleableProperties;
+.super Ljava/lang/Object;
+.source "Separator.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljavafx/scene/control/Separator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "StyleableProperties"
+.end annotation
+
+
+# static fields
+.field private static final HALIGNMENT:Ljavafx/css/CssMetaData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavafx/css/CssMetaData",
+            "<",
+            "Ljavafx/scene/control/Separator;",
+            "Ljavafx/geometry/HPos;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final ORIENTATION:Ljavafx/css/CssMetaData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavafx/css/CssMetaData",
+            "<",
+            "Ljavafx/scene/control/Separator;",
+            "Ljavafx/geometry/Orientation;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final STYLEABLES:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljavafx/css/CssMetaData",
+            "<+",
+            "Ljavafx/css/Styleable;",
+            "*>;>;"
+        }
+    .end annotation
+.end field
+
+.field private static final VALIGNMENT:Ljavafx/css/CssMetaData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavafx/css/CssMetaData",
+            "<",
+            "Ljavafx/scene/control/Separator;",
+            "Ljavafx/geometry/VPos;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 8
+
+    .prologue
+    .line 240
+    new-instance v1, Ljavafx/scene/control/Separator$StyleableProperties$1;
+
+    move-object v7, v1
+
+    move-object v1, v7
+
+    move-object v2, v7
+
+    const-string v3, "-fx-orientation"
+
+    new-instance v4, Lcom/sun/javafx/css/converters/EnumConverter;
+
+    move-object v7, v4
+
+    move-object v4, v7
+
+    move-object v5, v7
+
+    const-class v6, Ljavafx/geometry/Orientation;
+
+    invoke-direct {v5, v6}, Lcom/sun/javafx/css/converters/EnumConverter;-><init>(Ljava/lang/Class;)V
+
+    sget-object v5, Ljavafx/geometry/Orientation;->HORIZONTAL:Ljavafx/geometry/Orientation;
+
+    invoke-direct {v2, v3, v4, v5}, Ljavafx/scene/control/Separator$StyleableProperties$1;-><init>(Ljava/lang/String;Ljavafx/css/StyleConverter;Ljavafx/geometry/Orientation;)V
+
+    sput-object v1, Ljavafx/scene/control/Separator$StyleableProperties;->ORIENTATION:Ljavafx/css/CssMetaData;
+
+    .line 262
+    new-instance v1, Ljavafx/scene/control/Separator$StyleableProperties$2;
+
+    move-object v7, v1
+
+    move-object v1, v7
+
+    move-object v2, v7
+
+    const-string v3, "-fx-halignment"
+
+    new-instance v4, Lcom/sun/javafx/css/converters/EnumConverter;
+
+    move-object v7, v4
+
+    move-object v4, v7
+
+    move-object v5, v7
+
+    const-class v6, Ljavafx/geometry/HPos;
+
+    invoke-direct {v5, v6}, Lcom/sun/javafx/css/converters/EnumConverter;-><init>(Ljava/lang/Class;)V
+
+    sget-object v5, Ljavafx/geometry/HPos;->CENTER:Ljavafx/geometry/HPos;
+
+    invoke-direct {v2, v3, v4, v5}, Ljavafx/scene/control/Separator$StyleableProperties$2;-><init>(Ljava/lang/String;Ljavafx/css/StyleConverter;Ljavafx/geometry/HPos;)V
+
+    sput-object v1, Ljavafx/scene/control/Separator$StyleableProperties;->HALIGNMENT:Ljavafx/css/CssMetaData;
+
+    .line 278
+    new-instance v1, Ljavafx/scene/control/Separator$StyleableProperties$3;
+
+    move-object v7, v1
+
+    move-object v1, v7
+
+    move-object v2, v7
+
+    const-string v3, "-fx-valignment"
+
+    new-instance v4, Lcom/sun/javafx/css/converters/EnumConverter;
+
+    move-object v7, v4
+
+    move-object v4, v7
+
+    move-object v5, v7
+
+    const-class v6, Ljavafx/geometry/VPos;
+
+    invoke-direct {v5, v6}, Lcom/sun/javafx/css/converters/EnumConverter;-><init>(Ljava/lang/Class;)V
+
+    sget-object v5, Ljavafx/geometry/VPos;->CENTER:Ljavafx/geometry/VPos;
+
+    invoke-direct {v2, v3, v4, v5}, Ljavafx/scene/control/Separator$StyleableProperties$3;-><init>(Ljava/lang/String;Ljavafx/css/StyleConverter;Ljavafx/geometry/VPos;)V
+
+    sput-object v1, Ljavafx/scene/control/Separator$StyleableProperties;->VALIGNMENT:Ljavafx/css/CssMetaData;
+
+    .line 296
+    new-instance v1, Ljava/util/ArrayList;
+
+    move-object v7, v1
+
+    move-object v1, v7
+
+    move-object v2, v7
+
+    .line 297
+    invoke-static {}, Ljavafx/scene/control/Control;->getClassCssMetaData()Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    move-object v0, v1
+
+    .line 298
+    .local v0, "styleables":Ljava/util/List;, "Ljava/util/List<Ljavafx/css/CssMetaData<+Ljavafx/css/Styleable;*>;>;"
+    move-object v1, v0
+
+    sget-object v2, Ljavafx/scene/control/Separator$StyleableProperties;->ORIENTATION:Ljavafx/css/CssMetaData;
+
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    .line 299
+    move-object v1, v0
+
+    sget-object v2, Ljavafx/scene/control/Separator$StyleableProperties;->HALIGNMENT:Ljavafx/css/CssMetaData;
+
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    .line 300
+    move-object v1, v0
+
+    sget-object v2, Ljavafx/scene/control/Separator$StyleableProperties;->VALIGNMENT:Ljavafx/css/CssMetaData;
+
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    .line 301
+    move-object v1, v0
+
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v1
+
+    sput-object v1, Ljavafx/scene/control/Separator$StyleableProperties;->STYLEABLES:Ljava/util/List;
+
+    .line 302
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 2
+
+    .prologue
+    .line 239
+    move-object v0, p0
+
+    .local v0, "this":Ljavafx/scene/control/Separator$StyleableProperties;
+    move-object v1, v0
+
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$200()Ljavafx/css/CssMetaData;
+    .locals 1
+
+    .prologue
+    .line 239
+    sget-object v0, Ljavafx/scene/control/Separator$StyleableProperties;->ORIENTATION:Ljavafx/css/CssMetaData;
+
+    return-object v0
+.end method
+
+.method static synthetic access$300()Ljavafx/css/CssMetaData;
+    .locals 1
+
+    .prologue
+    .line 239
+    sget-object v0, Ljavafx/scene/control/Separator$StyleableProperties;->HALIGNMENT:Ljavafx/css/CssMetaData;
+
+    return-object v0
+.end method
+
+.method static synthetic access$400()Ljavafx/css/CssMetaData;
+    .locals 1
+
+    .prologue
+    .line 239
+    sget-object v0, Ljavafx/scene/control/Separator$StyleableProperties;->VALIGNMENT:Ljavafx/css/CssMetaData;
+
+    return-object v0
+.end method
+
+.method static synthetic access$800()Ljava/util/List;
+    .locals 1
+
+    .prologue
+    .line 239
+    sget-object v0, Ljavafx/scene/control/Separator$StyleableProperties;->STYLEABLES:Ljava/util/List;
+
+    return-object v0
+.end method

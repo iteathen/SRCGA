@@ -1,0 +1,1 @@
+C:\Users\heathen\AppData\Local\Android\sdk\platform-tools\apktool\apktool d "build\javafxports\android\SRCGA.apk"

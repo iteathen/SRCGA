@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2016, 8:59:01 PM
+    Author     : heathen
+*/
+
+.root {-fx-background-color: black;}
+
+.animation {
+    -fx-background-color: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: linear-gradient(#FF5555 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-border-radius: 0 4 0 10;
+    -fx-text-fill: linear-gradient(#FFFFFF 0%, #FFFFFF 50%, #AA8888 60%, #FFFFFF 70%, #FFFFFF 100%);
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 8,70%,6,5 );
+}
