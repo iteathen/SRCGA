@@ -5,6 +5,7 @@
  */
 package SRCGA;
 
+import static SRCGA.SRCGA_Main.FxmlHashMap;
 import javafx.geometry.Pos;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.Label;
@@ -34,6 +35,7 @@ public class MainMenu {
     Button loadcharacter = new Button("Load Character");
     Button quit = new Button("Quit");
     Stage stage;
+    Label HashMapSizeLabel = new Label();;
 
     public MainMenu(Stage stage){
         this.stage = stage;
@@ -78,6 +80,7 @@ public class MainMenu {
         vbox.getChildren().add(savecharacter);
         vbox.getChildren().add(loadcharacter);
         vbox.getChildren().add(quit);
+        vbox.getChildren().add(HashMapSizeLabel);
         
         BaseStackPane.getChildren().add(vbox);
 
@@ -98,6 +101,7 @@ public class MainMenu {
         });
     }
     public void Show(){
+        HashMapSizeLabel.setText("HashMap size: " + SRCGA_Main.FxmlHashMap.size());
         SRCGA_Main.preloader_StackPane.getChildren().clear();
         SRCGA_Main.preloader_StackPane.getChildren().add(BaseStackPane);
     }

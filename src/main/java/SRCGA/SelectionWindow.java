@@ -15,31 +15,29 @@ import javafx.scene.layout.StackPane;
  */
 public class SelectionWindow {
     private StackPane BaseStackPane = new StackPane();
-    
+    public SelectionWindow(String fxmlfile){
+        try{
+            Node FxmlData = SRCGA_Main.FxmlHashMap.get(fxmlfile);
+            if (FxmlData == null) {
+                FXMLLoader t = new FXMLLoader(Thread.currentThread().getContextClassLoader().getResource(fxmlfile));
+                FxmlData = t.load();
+                FxmlData.setUserData(t.getController());
+                FxmlData.setId(fxmlfile);
+                SRCGA_Main.FxmlHashMap.put(fxmlfile, FxmlData);
+            }
+            BaseStackPane.getChildren().add(FxmlData);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
     public void removeall(){
         BaseStackPane.getChildren().clear();
     }
     public void remove(Node object){
         BaseStackPane.getChildren().remove(object);
     }
-    public SelectionWindow(String fxmlfile){
-        try{
-            Node FxmlData = SRCGA_Main.FxmlHashMap.get(fxmlfile);
-            if (FxmlData == null) {
-                FxmlData = FXMLLoader.load(Thread.currentThread().getContextClassLoader().getResource(fxmlfile));
-                System.out.println("if " + FxmlData);
-                SRCGA_Main.FxmlHashMap.put(fxmlfile, FxmlData);
-            }
-            System.out.println("else " + FxmlData);
-            BaseStackPane.getChildren().add(FxmlData); // null pointer
-            System.out.println(BaseStackPane);
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-    }
     public void show(){
-        
         SRCGA_Main.preloader_StackPane.getChildren().add(BaseStackPane);
     }
 }

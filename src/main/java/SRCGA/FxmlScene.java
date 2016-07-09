@@ -17,35 +17,37 @@ import javafx.stage.Stage;
  */
 public class FxmlScene {
     boolean failed = false;
+    private Stage stage;
+    private StackPane BaseStackPane = new StackPane();
     
-    Stage stage;
-    StackPane BaseStackPane = new StackPane();
-    
-    public FxmlScene(Stage stage, String fxmlfile) { //if the fxml specifies fx:controller use this one
+    public FxmlScene(Stage stage, String fxmlfile) { //pass the stage that will display the FXML file and pass the FXML file path.
         this.stage = stage;
-            try{
-                Node FxmlData = SRCGA_Main.FxmlHashMap.get(fxmlfile);
-                if (FxmlData == null) {
-                    FxmlData = FXMLLoader.load(Thread.currentThread().getContextClassLoader().getResource(fxmlfile));
-                    SRCGA_Main.FxmlHashMap.put(fxmlfile, FxmlData);
+        try{
+            Node FxmlData = SRCGA_Main.FxmlHashMap.get(fxmlfile); //Fill the FxmlData with nodes from the memory cache
+            if (FxmlData == null) { // if that failed
+                FXMLLoader t = new FXMLLoader(Thread.currentThread().getContextClassLoader().getResource(fxmlfile)); //get a file stream
+                FxmlData = t.load(); //fill it with nodes from file stream
+                FxmlData.setUserData(t.getController()); //attach the controller object to the userData so we can use it later.
+                FxmlData.setId(fxmlfile); //give an id to make it easrier to find later.
+                SRCGA_Main.FxmlHashMap.put(fxmlfile, FxmlData); //then put it in the cache. It might save disk time later.
+            }
+            BaseStackPane.getChildren().setAll(FxmlData); // We need a stackpane to layer windows later. In case the FXML object didn't have one of its own we add one here.
+            stage.getScene().addEventFilter(KeyEvent.KEY_PRESSED, event -> { // set the esc key to return to the main menu.
+                if(event.getCode() == KeyCode.ESCAPE){
+                    SRCGA_Main.MainMenuScreen.Show();
                 }
-                BaseStackPane.getChildren().setAll(FxmlData);
-                stage.getScene().addEventFilter(KeyEvent.KEY_PRESSED, event -> {
-                    if(event.getCode() == KeyCode.ESCAPE){
-                        SRCGA_Main.MainMenuScreen.Show();
-                    }
-                });
-            }
-            catch(Exception e){
-                e.printStackTrace();
-                failed = true;
-            }
+            });
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            failed = true;
+        }
     }
     
     public boolean Show(){
         if(!failed){
-            SRCGA_Main.preloader_StackPane.getChildren().clear();
-            SRCGA_Main.preloader_StackPane.getChildren().add(BaseStackPane);
+            SRCGA_Main.preloader_StackPane.getChildren().clear(); //clear the old content
+            SRCGA_Main.preloader_StackPane.getChildren().add(BaseStackPane); //load our new content
             return true;
         }
         else return false;
